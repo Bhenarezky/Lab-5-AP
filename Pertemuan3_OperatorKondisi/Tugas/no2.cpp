@@ -6,7 +6,7 @@ int main() {
     system("CLS");
     
     string nama;
-    long Gpokok, Gbersih, Gkotor, uanganak, pajak;
+    long Gpokok, Gbersih, uanganak;
     int anak, gol;
     
     cout << "Masukan Nama Anda :";
@@ -15,11 +15,11 @@ int main() {
     cin >> gol;
 
     if (gol == 1) {
-        Gpokok = 5000000;
+        Gpokok = 5000000 * 95/100;
     } else if (gol == 2) {
-        Gpokok = 3000000;
+        Gpokok = 3000000 * 95/100;
     } else if (gol == 3) {
-        Gpokok = 2500000;
+        Gpokok = 2500000 * 95/100;
     } else {
         cout << "Golongan Anda Tidak Valid";
         exit(0);
@@ -36,12 +36,7 @@ int main() {
         uanganak = 750000 * anak;
     }
 
-    pajak = Gpokok * 5/100;
-    Gkotor = Gpokok - pajak;
-    Gbersih = Gkotor + uanganak;
-   
- 
-
+    Gbersih = Gpokok + uanganak;
 
     system("CLS");
     cout << "=========================================" << endl;
