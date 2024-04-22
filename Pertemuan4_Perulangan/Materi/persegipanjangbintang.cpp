@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+    system("CLS");
     int panjang, lebar;
 
     cout << "Masukkan panjang persegi: ";
