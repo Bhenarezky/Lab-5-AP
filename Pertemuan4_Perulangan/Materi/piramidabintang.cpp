@@ -9,7 +9,7 @@ int main() {
     cin >> tinggi;
 
     for (int i = 0; i < tinggi; i++) {
-        for (int j = tinggi; j > i; j--) {
+        for (int j = tinggi - 1; j > i; j--) {
             cout <<" ";
         }
         for (int k = 0 ; k <= i; k++) {
@@ -22,7 +22,7 @@ int main() {
         for (int j = 0; j < tinggi - i; j++) {
             cout <<" ";
         }
-        for (int k = 0 ; k <= i; k++) {
+        for (int k = 0 ; k < i; k++) {
             cout << "* ";
         }
         cout << endl;
